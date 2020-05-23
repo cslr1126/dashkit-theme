@@ -1,0 +1,80 @@
+// Avatar
+
+$avatar-title-bg: $gray-500;
+$avatar-title-color: $white;
+
+$avatar-indicator-offline-bg: $gray-500;
+$avatar-indicator-online-bg: $green;
+
+$avatar-size: 3rem;
+$avatar-font-size: 1rem;
+$avatar-ratio-size: 4rem;
+
+$avatar-size-xs: 1.625rem;
+$avatar-font-size-xs: .54167rem;
+$avatar-ratio-size-xs: 2.16667rem;
+
+$avatar-size-sm: 2.5rem;
+$avatar-font-size-sm: .83333rem;
+$avatar-ratio-size-sm: 3.33333rem;
+
+$avatar-size-lg: 4rem;
+$avatar-font-size-lg: 1.33333rem;
+$avatar-ratio-size-lg: 5.33333rem;
+
+$avatar-size-xl: 5.125rem;
+$avatar-font-size-xl: 1.70833rem;
+$avatar-ratio-size-xl: 6.83333rem;
+
+$avatar-size-xxl: 8rem;
+$avatar-font-size-xxl: 2.66667rem;
+$avatar-ratio-size-xxl: 10.66667rem;
+
+$avatar-sizes: (
+	"xs": (
+		"size": $avatar-size-xs,
+		"font-size": $avatar-font-size-xs,
+		"ratio-size": $avatar-ratio-size-xs
+	),
+	"sm": (
+		"size": $avatar-size-sm,
+		"font-size": $avatar-font-size-sm,
+		"ratio-size": $avatar-ratio-size-sm
+	),
+	"lg": (
+		"size": $avatar-size-lg,
+		"font-size": $avatar-font-size-lg,
+		"ratio-size": $avatar-ratio-size-lg
+	),
+	"xl": (
+		"size": $avatar-size-xl,
+		"font-size": $avatar-font-size-xl,
+		"ratio-size": $avatar-ratio-size-xl
+	),
+	"xxl": (
+		"size": $avatar-size-xxl,
+		"font-size": $avatar-font-size-xxl,
+		"ratio-size": $avatar-ratio-size-xxl
+	)
+);
+
+$avatar-group-spacer: -.75rem;
+$avatar-group-spacer-xs: -.40625rem;
+$avatar-group-spacer-sm: -.625rem;
+$avatar-group-spacer-lg: -1rem;
+$avatar-group-spacer-xl: -1.28125rem;
+$avatar-group-spacer-xxl: -2rem;
+
+$avatar-group-spacers: (
+	xs: $avatar-group-spacer-xs,
+	sm: $avatar-group-spacer-sm,
+	lg: $avatar-group-spacer-lg,
+	xl: $avatar-group-spacer-xl,
+	xxl: $avatar-group-spacer-xxl
+);
+
+
+// Progress Bars
+
+$progress-height-sm: .25rem;
+

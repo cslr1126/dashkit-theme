@@ -1,0 +1,16 @@
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 58px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+
+	> :first-child {
+		flex: 1;
+	}
+
+	&-title {
+		margin-bottom: 0;
+	}
+}

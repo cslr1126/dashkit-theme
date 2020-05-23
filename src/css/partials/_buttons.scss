@@ -1,0 +1,14 @@
+.btn-rounded-circle {
+	width: calc(1em * 1.5 + 1rem + 1px * 2);
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 50%;
+
+    &.btn-sm {
+    	width: calc(1em * 1.75 + .25rem + 1px * 2);
+    }
+
+    &.btn-lg {
+    	width: calc(1em * 1.5 + 1.5rem + 1px * 2);
+    }
+}

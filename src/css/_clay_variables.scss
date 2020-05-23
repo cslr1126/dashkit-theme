@@ -1,0 +1,439 @@
+// Color system
+
+$white: #fff;
+$gray-100: #f9fbfd;
+$gray-200: #edf2f9;
+$gray-300: #e3ebf6;
+$gray-400: #d2ddec;
+$gray-500: #b1c2d9;
+$gray-600: #95aac9;
+$gray-700: #6e84a3;
+$gray-800: #3b506c;
+$gray-900: #283e59;
+
+$blue: #2c7be5;
+$green: #00d97e;
+$red: #e63757;
+$yellow: #f6c343;
+$cyan: #39afd1;
+$indigo: #727cf5;
+$purple: #6b5eae;
+$pink: #ff679b;
+$teal: #02a8b5;
+
+$primary: $blue;
+$secondary: $gray-700;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-200;
+$dark: #12263f;
+
+$primary-soft: #d5e5fa;
+$secondary-soft: #e2e6ed;
+$success-soft: #ccf7e5;
+$info-soft: #d7eff6;
+$warning-soft: #fdf3d9;
+$danger-soft: #fad7dd;
+$light-soft: #fbfcfe;
+$dark-soft: #d0d4d9;
+
+$theme-soft-colors: (
+	"primary-soft": $primary-soft,
+	"secondary-soft": $secondary-soft,
+	"success-soft": $success-soft,
+	"info-soft": $info-soft,
+	"warning-soft": $warning-soft,
+	"danger-soft": $danger-soft,
+	"light-soft": $light-soft,
+	"dark-soft": $dark-soft
+);
+
+
+// Body
+
+$body-bg: $gray-100;
+$body-color: $dark;
+
+
+// Typography
+
+$font-size-base: .9375rem;
+
+$h1-font-size: 1.625rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.0625rem;
+$h4-font-size: .9375rem;
+$h5-font-size: .8125rem;
+$h6-font-size: .625rem;
+
+$text-muted: $gray-600;
+
+
+// Forms
+
+$input-btn-padding-y: .5rem;
+$input-btn-font-size: .9375rem;
+
+$input-btn-padding-y-sm: .125rem;
+$input-btn-line-height-sm: 1.75;
+
+$input-btn-padding-y-lg: .75rem;
+$input-btn-padding-x-lg: 1.25rem;
+
+$input-bg: $white;
+$input-color: $body-color;
+$input-border-color: $gray-400;
+$input-placeholder-color: $gray-500;
+$input-border-radius: .375rem;
+$input-box-shadow: null;
+
+$custom-control-indicator-bg: $gray-300;
+$custom-control-indicator-border-color: $white;
+
+
+// Button Variants
+
+$btn-white: (
+	bg: $white,
+	border-color: $gray-300,
+	color: $gray-900,
+	hover-bg: #f9fbfd,
+	hover-border-color: $gray-400,
+	hover-color: $gray-900,
+	focus-bg: #f9fbfd,
+	focus-border-color: $gray-400,
+	focus-box-shadow: 0 0 0 .15rem rgba(223, 226, 230, .5),
+	focus-color: $gray-900,
+	disabled-bg: $white,
+	disabled-border-color: $white,
+	disabled-color: $gray-900,
+	active-border-color: #dfdfdf,
+	active-color: $gray-900,
+	active-bg: #e6e6e6,
+	active-box-shadow: none,
+	active-focus-box-shadow: 0 0 0 .15rem rgba(223, 226, 230, .5),
+	loading-animation: null
+);
+
+$btn-palette: () !default;
+$btn-palette: map-merge((
+	white: $btn-white
+), $btn-palette);
+
+
+// Button Toolbar
+
+$btn-toolbar-spacer-y: 0;
+
+
+// Alerts
+
+$alert-primary-bg: $primary;
+$alert-primary-border-color: $alert-primary-bg;
+$alert-primary-color: $white;
+$alert-primary-close-color: $alert-primary-color;
+$alert-primary-close-hover-color: $alert-primary-close-color;
+$alert-primary-link-color: $alert-primary-color;
+$alert-primary-link-hover-color: $alert-primary-link-color;
+
+$alert-secondary-bg: $secondary;
+$alert-secondary-border-color: $alert-secondary-bg;
+$alert-secondary-color: $white;
+$alert-secondary-close-color: $alert-secondary-color;
+$alert-secondary-close-hover-color: $alert-secondary-close-color;
+$alert-secondary-link-color: $alert-secondary-color;
+$alert-secondary-link-hover-color: $alert-secondary-color;
+
+$alert-success-bg: $success;
+$alert-success-border-color: $alert-success-bg;
+$alert-success-color: $white;
+$alert-success-close-color: $alert-success-color;
+$alert-success-close-hover-color: $alert-success-close-color;
+$alert-success-link-color: $alert-success-color;
+$alert-success-link-hover-color: $alert-success-color;
+
+$alert-info-bg: $info;
+$alert-info-border-color: $alert-info-bg;
+$alert-info-color: $white;
+$alert-info-close-color: $alert-info-color;
+$alert-info-close-hover-color: $alert-info-close-color;
+$alert-info-link-color: $alert-info-color;
+$alert-info-link-hover-color: $alert-info-color;
+
+$alert-warning-bg: $warning;
+$alert-warning-border-color: $alert-warning-bg;
+$alert-warning-color: $gray-900;
+$alert-warning-close-color: $alert-warning-color;
+$alert-warning-close-hover-color: $alert-warning-close-color;
+$alert-warning-link-color: $alert-warning-color;
+$alert-warning-link-hover-color: $alert-warning-color;
+
+$alert-danger-bg: $danger;
+$alert-danger-border-color: $alert-danger-bg;
+$alert-danger-color: $white;
+$alert-danger-close-color: $alert-danger-color;
+$alert-danger-close-hover-color: $alert-danger-close-color;
+$alert-danger-link-color: $alert-danger-color;
+$alert-danger-link-hover-color: $alert-danger-color;
+
+$alert-light-bg: $light;
+$alert-light-border-color: $alert-light-bg;
+$alert-light-color: $gray-900;
+$alert-light-close-color: $alert-light-color;
+$alert-light-close-hover-color: $alert-light-close-color;
+$alert-light-link-color: $alert-light-color;
+$alert-light-link-hover-color: $alert-light-color;
+
+$alert-dark-bg: $dark;
+$alert-dark-border-color: $alert-dark-bg;
+$alert-dark-color: $white;
+$alert-dark-close-color: $alert-dark-color;
+$alert-dark-close-hover-color: $alert-dark-close-color;
+$alert-dark-link-color: $alert-dark-color;
+$alert-dark-link-hover-color: $alert-dark-color;
+
+$alert-close-position-top: .5rem;
+
+
+// Badges
+
+$badge-font-weight: 400;
+$badge-border-radius: .375rem;
+
+
+// Badge Variants
+
+$badge-primary-soft-bg: $primary-soft;
+$badge-primary-soft-hover-bg: #bed7f7;
+$badge-primary-soft-border-color: null;
+$badge-primary-soft-hover-border-color: null;
+$badge-primary-soft-color: $primary;
+$badge-primary-soft-hover-color: $badge-primary-soft-color;
+$badge-primary-soft-link-color: $badge-primary-soft-color;
+$badge-primary-soft-link-hover-color: $badge-primary-soft-color;
+
+$badge-secondary-soft-bg: $secondary-soft;
+$badge-secondary-soft-hover-bg: #d2d8e3;
+$badge-secondary-soft-border-color: null;
+$badge-secondary-soft-hover-border-color: null;
+$badge-secondary-soft-color: $secondary;
+$badge-secondary-soft-hover-color: $badge-secondary-soft-color;
+$badge-secondary-soft-link-color: $badge-secondary-soft-color;
+$badge-secondary-soft-link-hover-color: $badge-secondary-soft-color;
+
+$badge-success-soft-bg: $success-soft;
+$badge-success-soft-hover-bg: #b6f4da;
+$badge-success-soft-border-color: null;
+$badge-success-soft-hover-border-color: null;
+$badge-success-soft-color: $success;
+$badge-success-soft-hover-color: $badge-success-soft-color;
+$badge-success-soft-link-color: $badge-success-soft-color;
+$badge-success-soft-link-hover-color: $badge-success-soft-color;
+
+$badge-info-soft-bg: $info-soft;
+$badge-info-soft-hover-bg: #c2e7f1;
+$badge-info-soft-border-color: null;
+$badge-info-soft-hover-border-color: null;
+$badge-info-soft-color: $info;
+$badge-info-soft-hover-color: $badge-info-soft-color;
+$badge-info-soft-link-color: $badge-info-soft-color;
+$badge-info-soft-link-hover-color: $badge-info-soft-color;
+
+$badge-warning-soft-bg: $warning-soft;
+$badge-warning-soft-hover-bg: #fcebc1;
+$badge-warning-soft-border-color: null;
+$badge-warning-soft-hover-border-color: null;
+$badge-warning-soft-color: $warning;
+$badge-warning-soft-hover-color: $badge-warning-soft-color;
+$badge-warning-soft-link-color: $badge-warning-soft-color;
+$badge-warning-soft-link-hover-color: $badge-warning-soft-color;
+
+$badge-danger-soft-bg: $danger-soft;
+$badge-danger-soft-hover-bg: #f7c0ca;
+$badge-danger-soft-border-color: null;
+$badge-danger-soft-hover-border-color: null;
+$badge-danger-soft-color: $danger;
+$badge-danger-soft-hover-color: $badge-danger-soft-color;
+$badge-danger-soft-link-color: $badge-danger-soft-color;
+$badge-danger-soft-link-hover-color: $badge-danger-soft-color;
+
+$badge-light-soft-bg: $light-soft;
+$badge-light-soft-hover-bg: #e7edf9;
+$badge-light-soft-border-color: null;
+$badge-light-soft-hover-border-color: null;
+$badge-light-soft-color: $light;
+$badge-light-soft-hover-color: $badge-light-soft-color;
+$badge-light-soft-link-color: $badge-light-soft-color;
+$badge-light-soft-link-hover-color: $badge-light-soft-color;
+
+$badge-dark-soft-bg: $dark-soft;
+$badge-dark-soft-hover-bg: #c2c7ce;
+$badge-dark-soft-border-color: null;
+$badge-dark-soft-hover-border-color: null;
+$badge-dark-soft-color: $dark;
+$badge-dark-soft-hover-color: $badge-dark-soft-color;
+$badge-dark-soft-link-color: $badge-dark-soft-color;
+$badge-dark-soft-link-hover-color: $badge-dark-soft-color;
+
+$badge-palette: () !default;
+$badge-palette: map-merge((
+	soft-primary: (
+		bg: $badge-primary-soft-bg,
+		hover-bg: $badge-primary-soft-hover-bg,
+		border-color: $badge-primary-soft-border-color,
+		hover-border-color: $badge-primary-soft-hover-border-color,
+		color: $badge-primary-soft-color,
+		hover-color: $badge-primary-soft-hover-color,
+		link-color: $badge-primary-soft-link-color,
+		link-hover-color: $badge-primary-soft-link-hover-color
+	),
+	soft-secondary: (
+		bg: $badge-secondary-soft-bg,
+		hover-bg: $badge-secondary-soft-hover-bg,
+		border-color: $badge-secondary-soft-border-color,
+		hover-border-color: $badge-secondary-soft-hover-border-color,
+		color: $badge-secondary-soft-color,
+		hover-color: $badge-secondary-soft-hover-color,
+		link-color: $badge-secondary-soft-link-color,
+		link-hover-color: $badge-secondary-soft-link-hover-color
+	),
+	soft-success: (
+		bg: $badge-success-soft-bg,
+		hover-bg: $badge-success-soft-hover-bg,
+		border-color: $badge-success-soft-border-color,
+		hover-border-color: $badge-success-soft-hover-border-color,
+		color: $badge-success-soft-color,
+		hover-color: $badge-success-soft-hover-color,
+		link-color: $badge-success-soft-link-color,
+		link-hover-color: $badge-success-soft-link-hover-color
+	),
+	soft-info: (
+		bg: $badge-info-soft-bg,
+		hover-bg: $badge-info-soft-hover-bg,
+		border-color: $badge-info-soft-border-color,
+		hover-border-color: $badge-info-soft-hover-border-color,
+		color: $badge-info-soft-color,
+		hover-color: $badge-info-soft-hover-color,
+		link-color: $badge-info-soft-link-color,
+		link-hover-color: $badge-info-soft-link-hover-color
+	),
+	soft-warning: (
+		bg: $badge-warning-soft-bg,
+		hover-bg: $badge-warning-soft-hover-bg,
+		border-color: $badge-warning-soft-border-color,
+		hover-border-color: $badge-warning-soft-hover-border-color,
+		color: $badge-warning-soft-color,
+		hover-color: $badge-warning-soft-hover-color,
+		link-color: $badge-warning-soft-link-color,
+		link-hover-color: $badge-warning-soft-link-hover-color
+	),
+	soft-danger: (
+		bg: $badge-danger-soft-bg,
+		hover-bg: $badge-danger-soft-hover-bg,
+		border-color: $badge-danger-soft-border-color,
+		hover-border-color: $badge-danger-soft-hover-border-color,
+		color: $badge-danger-soft-color,
+		hover-color: $badge-danger-soft-hover-color,
+		link-color: $badge-danger-soft-link-color,
+		link-hover-color: $badge-danger-soft-link-hover-color
+	),
+	soft-light: (
+		bg: $badge-light-soft-bg,
+		hover-bg: $badge-light-soft-hover-bg,
+		border-color: $badge-light-soft-border-color,
+		hover-border-color: $badge-light-soft-hover-border-color,
+		color: $badge-light-soft-color,
+		hover-color: $badge-light-soft-hover-color,
+		link-color: $badge-light-soft-link-color,
+		link-hover-color: $badge-light-soft-link-hover-color
+	),
+	soft-dark: (
+		bg: $badge-dark-soft-bg,
+		hover-bg: $badge-dark-soft-hover-bg,
+		border-color: $badge-dark-soft-border-color,
+		hover-border-color: $badge-dark-soft-hover-border-color,
+		color: $badge-dark-soft-color,
+		hover-color: $badge-dark-soft-hover-color,
+		link-color: $badge-dark-soft-link-color,
+		link-hover-color: $badge-dark-soft-link-hover-color
+	)
+), $badge-palette);
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-x: 0;
+$breadcrumb-active-color: $text-muted;
+$breadcrumb-bg: transparent;
+$breadcrumb-margin-bottom: 0;
+
+
+// Cards
+
+$card-spacer-y: 1rem;
+$card-spacer-x: 1.5rem;
+$card-border-width: 1px;
+$card-border-radius: .5rem;
+$card-border-color: $light;
+$card-box-shadow: 0 .75rem 1.5rem rgba(18, 38, 63, .03);
+$card-cap-bg: transparent;
+
+
+// Navs
+
+$nav-tabs-link-color: $gray-600;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-color: $body-color;
+$nav-tabs-link-active-bg: $white;
+$nav-tabs-link-active-border-color: transparent transparent $primary;
+
+$nav-tabs-link: () !default;
+$nav-tabs-link: map-merge((
+	focus-box-shadow: none
+), $nav-tabs-link);
+
+
+// Tables
+
+$table-cell-padding: 1rem;
+$table-cell-padding-sm: 1rem;
+
+$table-hover-bg: $body-bg;
+$table-accent-bg: $body-bg;
+
+$table-head-bg: $body-bg;
+$table-head-color: $text-muted;
+$table-head-font-weight: 600;
+
+$table-data-border-bottom-width: 0;
+
+
+// Dropdowns
+
+$dropdown-border-color: rgba(18, 38, 63, .1);
+
+$dropdown-link-color: $gray-700;
+$dropdown-link-hover-color: $body-color;
+$dropdown-link-hover-bg: transparent;
+
+$dropdown-link-active-color: $body-color;
+$dropdown-link-active-bg: transparent;
+
+
+// List group
+
+$list-group-border-color: $light;
+$list-group-bg: transparent;
+
+
+// Progress bars
+
+$progress-border-radius: 1rem;
+
+
+// Close
+
+$close-font-size: 1.40625rem;
+

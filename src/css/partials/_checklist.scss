@@ -1,0 +1,26 @@
+.checklist {
+	outline: 0;
+
+	&-control {
+		display: flex;
+	    flex-wrap: nowrap;
+	    outline: 0;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+
+	    & + & {
+	    	margin-top: .75rem;
+	    }
+
+	    .custom-control-caption {
+	    	margin-left: .5rem;
+	    }
+
+	    .custom-control-input:checked ~ .custom-control-caption {
+	    	text-decoration: line-through;
+	    	color: $gray-700;
+	    }
+	}
+}
