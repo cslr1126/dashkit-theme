@@ -1,7 +1,7 @@
 {
   "LiferayTheme": {
-    "appServerPath": "/Users/csanchez/projects/docker/liferay/se-projects/docker-demos/feature-set-7.2-sp1/mount/files/tomcat",
-    "deployPath": "/Users/csanchez/projects/docker/liferay/se-projects/docker-demos/feature-set-7.2-sp1/mount/deploy",
+    "appServerPath": "/Users/csanchez/projects/liferay/bundles/liferay-dxp-7.2.10.2-sp2/tomcat-9.0.33",
+    "deployPath": "/Users/csanchez/projects/liferay/bundles/liferay-dxp-7.2.10.2-sp2/deploy",
     "deployed": true,
     "deploymentStrategy": "LocalAppServer",
     "url": "http://localhost:8080"
