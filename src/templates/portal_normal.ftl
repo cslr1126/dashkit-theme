@@ -46,7 +46,7 @@
 	</header>
 
 	<section id="content">
-	    <div>This is my section for DashKit</div>
+	    <div>This is my section for DashKit added another section</div>
 
 		<h2 class="hide-accessible" role="heading" aria-level="1">${the_title}</h2>
 

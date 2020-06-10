@@ -5,12 +5,8 @@
 @import 'liferay-font-awesome/scss/font-awesome';
 @import 'liferay-font-awesome/scss/glyphicons';
 
+@import './partials/_nav';
+
 /* endinject */
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
-.navbar-vertical-sm.navbar-expand-md .navbar-collapse {
-    margin-left: -.75rem;
-    margin-right: -.75rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
-}
