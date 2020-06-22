@@ -10,6 +10,15 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<@liferay_util["include"] page=top_head_include />
+<style>
+	
+	.portlet-title-text { 
+	  display:none;
+	}
+	.navbar-expand-lg .container, .navbar-expand-lg .container-fluid {
+     align-items: flex-start;
+	}
+</style>
 </head>
 
 <body class="${css_class}">
@@ -21,32 +30,14 @@
 <@liferay.control_menu />
 
 <div class="container-fluid" id="wrapper">
-	<header id="banner" role="banner">
-		<div id="heading">
-			<div aria-level="1" class="site-title" role="heading">
-				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-					<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-				</a>
-
-				<#if show_site_name>
-					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-						${site_name}
-					</span>
-				</#if>
-			</div>
-		</div>
-
-		<#if !is_signed_in>
-			<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-		</#if>
-
-		<#if has_navigation && is_setup_complete>
-			<#include "${full_templates_path}/navigation.ftl" />
-		</#if>
-	</header>
-
 	<section id="content">
-	    <div>This is my section for DashKit added another section</div>
+	    <div class="container" style="max-width: 100%;background-color: white;">
+			<header id="banner" role="banner">
+					<#if has_navigation && is_setup_complete>
+						<#include "${full_templates_path}/navigation.ftl" />
+					</#if>
+				</header>
+			</div>
 
 		<h2 class="hide-accessible" role="heading" aria-level="1">${the_title}</h2>
 
