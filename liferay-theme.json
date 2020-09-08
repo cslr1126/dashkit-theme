@@ -1,7 +1,7 @@
 {
   "LiferayTheme": {
-    "appServerPath": "/Users/csanchez/projects/liferay/bundles/liferay-dxp-7.2.10.2-sp2/tomcat-9.0.33",
-    "deployPath": "/Users/csanchez/projects/liferay/bundles/liferay-dxp-7.2.10.2-sp2/deploy",
+    "appServerPath": "/Users/csanchez/projects/liferay/bundles/liferay-dxp-7.2.10-sp1/tomcat-9.0.33",
+    "deployPath": "/Users/csanchez/projects/liferay/bundles/liferay-dxp-7.2.10-sp1/deploy",
     "deployed": true,
     "deploymentStrategy": "LocalAppServer",
     "url": "http://localhost:8080"
