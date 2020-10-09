@@ -56,6 +56,9 @@
 	</section>
 
 	<footer id="footer" role="contentinfo">
+		<p>
+           <span>Adding content here</span>
+		</p>
 		<p class="powered-by">
 			<@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</p>

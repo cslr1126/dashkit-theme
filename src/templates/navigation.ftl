@@ -103,7 +103,9 @@
       </#if>
 
  </div>
-  
+  <div id="nav-header">
+    <span>test</span>
+  </div>
 </div>
 
 <style>
