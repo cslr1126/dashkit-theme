@@ -30,6 +30,7 @@
 <@liferay.control_menu />
 
 <div class="container-fluid" id="wrapper">
+	<div id="test" class="container">This is test content</div>
 	<section id="content">
 	    <div class="container" style="max-width: 100%;background-color: white;">
 			<header id="banner" role="banner">
